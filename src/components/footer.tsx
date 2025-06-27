@@ -183,7 +183,7 @@ export function Footer() {
           {/* Bottom Footer */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm">
-              © 2024 GrabOn. All rights reserved. Made with ❤️ in India
+              © 2025 GrabOn. All rights reserved. Made with ❤️ in India
             </div>
             <div className="flex items-center gap-6">
               <Badge variant="secondary" className="bg-gray-800 text-gray-300">
