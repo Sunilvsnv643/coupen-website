@@ -36,16 +36,16 @@ export function PopularOffers() {
   ]
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-8 md:py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-6 md:mb-8">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
               Popular Offers of the Day
             </h2>
             <div className="w-16 h-1 bg-green-500 rounded"></div>
           </div>
-          <div className="flex gap-2">
+          <div className="hidden sm:flex gap-2">
             <Button variant="outline" size="sm" className="w-10 h-10 p-0">
               <ChevronLeft className="w-4 h-4" />
             </Button>
@@ -55,13 +55,13 @@ export function PopularOffers() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6">
           {offers.map((offer) => (
             <Card key={offer.id} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md overflow-hidden cursor-pointer">
               <CardContent className="p-0">
                 <div className="flex flex-col overflow-hidden">
                   {/* Image Section */}
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-40 md:h-48 overflow-hidden">
                     <Image 
                       src={offer.image} 
                       alt={offer.title}
@@ -76,13 +76,13 @@ export function PopularOffers() {
                   </div>
                   
                   {/* Content Section */}
-                  <div className={`${offer.bgColor} ${offer.textColor} p-6`}>
+                  <div className={`${offer.bgColor} ${offer.textColor} p-4 md:p-6`}>
                     <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-sm flex-shrink-0">
-                        <div className="w-5 h-5 bg-white/30 rounded"></div>
+                      <div className="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-sm flex-shrink-0">
+                        <div className="w-4 h-4 md:w-5 md:h-5 bg-white/30 rounded"></div>
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-bold text-lg mb-2">{offer.title}</h3>
+                        <h3 className="font-bold text-base md:text-lg mb-2">{offer.title}</h3>
                         <p className="text-sm opacity-90 leading-relaxed">{offer.description}</p>
                       </div>
                     </div>

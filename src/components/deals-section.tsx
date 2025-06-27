@@ -157,7 +157,7 @@ export function DealsSection() {
         </Card>
 
         {/* Deals Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           {deals.map((deal) => (
             <Card key={deal.id} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
               <CardContent className="p-0">
@@ -169,11 +169,11 @@ export function DealsSection() {
                     </Button>
                   </div>
                   <div className="absolute top-2 left-2 z-10">
-                    <Badge className="bg-red-500 text-white">
+                    <Badge className="bg-red-500 text-white text-xs">
                       {deal.discount}% OFF
                     </Badge>
                   </div>
-                  <div className="relative h-48 group-hover:scale-105 transition-transform duration-300">
+                  <div className="relative h-40 sm:h-48 group-hover:scale-105 transition-transform duration-300">
                     <Image 
                       src={deal.image} 
                       alt={deal.title}
@@ -189,11 +189,11 @@ export function DealsSection() {
                 </div>
 
                 {/* Content Section */}
-                <div className="p-4">
+                <div className="p-3 md:p-4">
                   <div className="mb-2">
                     <span className="text-xs text-gray-500 uppercase tracking-wide">{deal.brand}</span>
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-green-600 transition-colors">
+                  <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-green-600 transition-colors text-sm md:text-base">
                     {deal.title}
                   </h3>
 
