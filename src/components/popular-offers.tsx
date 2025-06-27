@@ -2,6 +2,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import Image from 'next/image'
 
 export function PopularOffers() {
   const offers = [
@@ -61,10 +62,11 @@ export function PopularOffers() {
                 <div className="flex flex-col overflow-hidden">
                   {/* Image Section */}
                   <div className="relative h-48 overflow-hidden">
-                    <img 
+                    <Image 
                       src={offer.image} 
                       alt={offer.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                     <div className="absolute top-3 right-3">
                       <Badge className="bg-green-500 text-white border-0 text-xs px-2 py-1">

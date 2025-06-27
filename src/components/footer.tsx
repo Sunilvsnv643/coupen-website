@@ -69,7 +69,7 @@ export function Footer() {
                 <span className="text-xl font-bold">GrabOn</span>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                India's largest platform for coupons, deals, and cashback offers. 
+                India&apos;s largest platform for coupons, deals, and cashback offers. 
                 Save money on every purchase with verified promo codes.
               </p>
               <div className="flex gap-4">

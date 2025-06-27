@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
-import { Clock, Copy, Star, Users, Tag, Percent, Gift, Plane, Car, Home, Smartphone, Gamepad2 } from 'lucide-react'
+import { Clock, Copy, Star, Users, Tag, Gift, Plane, Car, Home, Smartphone, Gamepad2 } from 'lucide-react'
 
 export function CouponsSection() {
   const categories = [
@@ -103,7 +103,7 @@ export function CouponsSection() {
         <div className="flex items-center justify-between mb-8">
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              Today's Top Coupons & Offers
+              Today&apos;s Top Coupons & Offers
             </h2>
             <div className="w-16 h-1 bg-green-500 rounded"></div>
           </div>

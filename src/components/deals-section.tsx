@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { Star, Clock, Heart } from 'lucide-react'
+import Image from 'next/image'
 
 export function DealsSection() {
   const deals = [
@@ -173,10 +174,11 @@ export function DealsSection() {
                     </Badge>
                   </div>
                   <div className="relative h-48 group-hover:scale-105 transition-transform duration-300">
-                    <img 
+                    <Image 
                       src={deal.image} 
                       alt={deal.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
                   <div className="absolute bottom-2 left-2 z-10">
